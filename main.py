@@ -1,11 +1,11 @@
 from aiogram import Bot, Dispatcher, executor, types
 import re
+import os
 
 import func
 
 
-API_TOKEN = '5457465685:AAH06wsBGJZZ8BHm0Ee457Y8zh8oA31MpJI'
-
+API_TOKEN = os.getenv('BOT')
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
